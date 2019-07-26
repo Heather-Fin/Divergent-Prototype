@@ -16,12 +16,12 @@ import UserAvatar20 from '@carbon/icons-react/lib/user--avatar/20';
 import AppSwitcher20 from '@carbon/icons-react/lib/app-switcher/20';
 
 const HeaderNav = () => (
-  <Header aria-label="Carbon Tutorial">
+  <Header aria-label="Diversity Manager Tool">
     <SkipToContent />
     <HeaderName element={Link} to="/" prefix="IBM">
-      Carbon Tutorial
+      Diversity Manager Tool
     </HeaderName>
-    <HeaderNavigation aria-label="Carbon Tutorial">
+    <HeaderNavigation aria-label="Diversity Manager Tool">
       <HeaderMenuItem element={Link} to="/resource">
         Resources
       </HeaderMenuItem>
