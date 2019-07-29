@@ -5,18 +5,22 @@ const ResourcePage = () => {
   return(
     <div className="bx--grid bx--grid--full-width resource-page">
         <div className="bx--row">
-            <div className="bx--col">
+            <div className="bx--col-md-2">
                 <ResourceCard />
                 <ResourceCard />
+              </div>
+              <div className="bx--col-md-2">
                 <ResourceCard />
                 <ResourceCard />
-            </div>
-            <div className="bx--row">
+              </div>
+              <div className="bx--col-md-2">
                 <ResourceCard />
                 <ResourceCard />
+              </div>
+              <div className="bx--col-md-2">
                 <ResourceCard />
                 <ResourceCard />
-            </div>
+              </div>
         </div>
     </div>
   );

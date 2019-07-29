@@ -6,7 +6,10 @@ import {
 
 const ResourceCard = () => (
     
-    <ClickableTile>Resource Tile</ClickableTile>
+    <ClickableTile className='tile'>
+        <h2>Resource Tile</h2>
+        <p>Lorem ipsum delores</p>
+    </ClickableTile>
 );
 
 export default ResourceCard;
