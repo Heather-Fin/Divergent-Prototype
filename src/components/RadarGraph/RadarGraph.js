@@ -49,7 +49,7 @@ class RadarGraph extends Component {
           dataLabels: {
             style: {
                 fontSize: '12px',
-                colors: ['#ffffff']
+                colors: ['#000000']
             }
           },
           legend: {
@@ -59,7 +59,7 @@ class RadarGraph extends Component {
             offsetY: 0,
             fontSize: '14px',
             labels: {
-              colors: ['#ffffff'],
+              colors: ['#000000'],
             },
             markers: {
               width: 14,
@@ -79,12 +79,16 @@ class RadarGraph extends Component {
         },
         series: [
           {
-            name: "IBM Average",
+            name: "Your Team",
             data: [30, 40, 45, 50, 20, 100, 70],
           },
           {
-            name: "Your Team",
+            name: "B.U. Average",
             data: [40, 80, 90, 35, 80, 20, 20],
+          },
+          {
+            name: "IBM Average",
+            data: [90, 80, 45, 50, 40, 90, 90],
           }
         ]
       };
