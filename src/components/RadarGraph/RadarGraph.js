@@ -33,7 +33,7 @@ class RadarGraph extends Component {
             offsetX: 30,
             style: {
               fontSize: '20px',
-              color:  '#ffffff'
+              color:  '#000000'
             },
           },
           colors: ['#a66efa', '#ee538b', '#6ea6ff'],
@@ -64,10 +64,10 @@ class RadarGraph extends Component {
             markers: {
               width: 14,
               height: 14,
-              radius: 2
+              radius: 2,
             },
             onItemClick: {
-              toggleDataSeries: false
+              toggleDataSeries: true
             } 
           },
           xaxis: {

@@ -1,10 +1,11 @@
 import React from 'react';
 import RadarGraph from '../../components/RadarGraph';
+import RadioTab from '../../components/RadioTabs';
 
 const LandingPage = () => {
   return( 
     <div>
-      <h1>Visualize the Data</h1>
+      <RadioTab />
       <RadarGraph />
     </div>
   );
