@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import RadioTab from '../../components/RadioTabs';
-import CurrentGraph from '../../components/CurrentGraph';
 
 class LandingPage extends Component {
 
@@ -8,7 +7,6 @@ class LandingPage extends Component {
     return ( 
       <div>
         <RadioTab />
-        <CurrentGraph />
       </div>
     );
   }
