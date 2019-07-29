@@ -9,7 +9,7 @@ class RadioTab extends Component {
     componentDidUpdate () {
         if (this.state.selected === 'radio-1') {
             return <RadarGraph />
-        } else {
+        } if (this.state.selected === 'radio-2') {
             return <HeatMap />
         }
     };
@@ -17,7 +17,7 @@ class RadioTab extends Component {
         return (
             <div>
                 <form>
-                    <label>
+                    <label className="radio-button">
                         <input
                             type="radio"
                             id='radio-1'

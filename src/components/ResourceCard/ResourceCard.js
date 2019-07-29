@@ -1,8 +1,6 @@
 import React from 'react';
 
-import {
-    ClickableTile,
-} from 'carbon-components-react/lib/components/Tile';
+import ClickableTile from 'carbon-components-react/lib/components/Tile';
 
 import ChevronRight20 from '@carbon/icons-react/lib/chevron--right/20';
 
