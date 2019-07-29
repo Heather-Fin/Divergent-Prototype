@@ -1,26 +1,15 @@
 import React, { Component } from 'react';
-import RadarGraph from '../../components/RadarGraph';
-import HeatMap from '../../components/HeatMap';
 import RadioTab from '../../components/RadioTabs';
+import CurrentGraph from '../../components/CurrentGraph';
 
 class LandingPage extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedOption: "option1"
-    };
-  };
-
   render () {
     return ( 
-      <>
-        <div>
-          <RadioTab />
-          <RadarGraph />
-          <HeatMap />
-        </div>
-      </>
+      <div>
+        <RadioTab />
+        <CurrentGraph />
+      </div>
     );
   }
 }

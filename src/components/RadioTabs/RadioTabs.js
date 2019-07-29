@@ -11,7 +11,7 @@ const RadioTab = () => (
             legend="Group Legend"
           >
             <RadioButton 
-                value="selected"
+                value="default-selected"
                 checked={true}
                 id="radio-1"
                 labelText='Button 1' />
@@ -19,7 +19,7 @@ const RadioTab = () => (
                 value="standard-2"
                 id="radio-2"
                 labelText='Button 2'
-                onChange= {console.log('hello world')}/>
+                />
             <RadioButton value="standard-3" id="radio-3" labelText='Button 3'/>
             <RadioButton value="standard-4" id="radio-4" labelText='Button 4'/>
             <RadioButton value="standard-5" id="radio-5" labelText='Button 5'/>
