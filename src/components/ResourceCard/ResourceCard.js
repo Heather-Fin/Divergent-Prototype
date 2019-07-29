@@ -9,9 +9,9 @@ import ChevronRight20 from '@carbon/icons-react/lib/chevron--right/20';
 const ResourceCard = () => (
     
     <ClickableTile className='tile'>
-        <h2>Resource Tile</h2>
-        <p>Lorem ipsum delores</p>
-        <ChevronRight20 className='arrow'/>
+        <h2 className='cardTitle'>Resource Tile</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <ChevronRight20 className='arrow' />
     </ClickableTile>
 );
 
