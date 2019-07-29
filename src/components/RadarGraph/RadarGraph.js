@@ -28,7 +28,7 @@ class RadarGraph extends Component {
             }
           },
           title: {
-            text: 'Diversity Radar Graph',
+            //text: 'Diversity Radar Graph',
             align: 'left',
             offsetX: 30,
             style: {
@@ -71,7 +71,7 @@ class RadarGraph extends Component {
             } 
           },
           xaxis: {
-            categories: ['Gender', 'Race', 'Accessibility', 'Education', 'Economic Background', 'Country of Origin', 'Sexual Identity']
+            categories: ['Data 1', 'Data 2', 'Data 3', 'Data 4', 'Data 5', 'Data 6', 'Data 7']
           },
           yaxis: {
             show: false

@@ -1,5 +1,6 @@
 import React from 'react';
 import RadarGraph from '../../components/RadarGraph';
+import HeatMap from '../../components/HeatMap';
 import RadioTab from '../../components/RadioTabs';
 
 const LandingPage = () => {
@@ -7,6 +8,7 @@ const LandingPage = () => {
     <div>
       <RadioTab />
       <RadarGraph />
+      <HeatMap />
     </div>
   );
 };
