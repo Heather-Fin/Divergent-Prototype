@@ -12,11 +12,9 @@ class LandingPage extends Component {
 
   render () {
     return ( 
-      <>
-        <div>
-          <RadioTab />
-        </div>
-      </>
+      <div className='charts'>
+        <RadioTab />
+      </div>
     );
   }
 }

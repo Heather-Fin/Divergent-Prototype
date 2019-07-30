@@ -16,27 +16,27 @@ class RadioTab extends Component {
     render () {
         return (
             <div>
-                <form>
+                <form className='button-group'>
+                    <input
+                        type="radio"
+                        id='radio-1'
+                        name='myRadio'
+                        value='radio-1'
+                        checked={this.state.selected === 'radio-1'}
+                        onChange={(e) => this.setState({ selected: e.target.value })}
+                    />
                     <label className="radio-button">
-                        <input
-                            type="radio"
-                            id='radio-1'
-                            name='myRadio'
-                            value='radio-1'
-                            checked={this.state.selected === 'radio-1'}
-                            onChange={(e) => this.setState({ selected: e.target.value })}
-                        />
                         Button 1
                     </label>
+                    <input
+                        type="radio"
+                        id='radio-2'
+                        name='myRadio'
+                        value='radio-2'
+                        checked={this.state.selected === 'radio-2'}
+                        onChange={(e) => this.setState({ selected: e.target.value })}
+                    />
                     <label className="radio-button">
-                        <input
-                            type="radio"
-                            id='radio-2'
-                            name='myRadio'
-                            value='radio-2'
-                            checked={this.state.selected === 'radio-2'}
-                            onChange={(e) => this.setState({ selected: e.target.value })}
-                        />
                         Button 2
                     </label>
                 </form>
