@@ -1,31 +1,49 @@
-import React from 'react';
+import React, { Component } from 'react';
+import RadarGraph from '../RadarGraph';
+import HeatMap from '../HeatMap';
 
-import RadioButtonGroup from 'carbon-components-react/lib/components/RadioButtonGroup';
-import RadioButton from 'carbon-components-react/lib/components/RadioButton';
-import FormGroup from 'carbon-components-react/lib/components/FormGroup';
-
-const RadioTab = () => (
-        <FormGroup legendText="Radio Buttons Heading">
-          <RadioButtonGroup
-            defaultSelected="default-selected"
-            legend="Group Legend"
-          >
-            <RadioButton 
-                value="selected"
-                checked={true}
-                id="radio-1"
-                labelText='Button 1' />
-            <RadioButton
-                value="standard-2"
-                id="radio-2"
-                labelText='Button 2'
-                onChange= {console.log('hello world')}/>
-            <RadioButton value="standard-3" id="radio-3" labelText='Button 3'/>
-            <RadioButton value="standard-4" id="radio-4" labelText='Button 4'/>
-            <RadioButton value="standard-5" id="radio-5" labelText='Button 5'/>
-            <RadioButton value ='standard-6' id="radio-6" labelText='Button 6'/>
-          </RadioButtonGroup>
-        </FormGroup>
-);
+class RadioTab extends Component {
+    state = {
+        selected: 'radio-1'
+    };
+    componentDidUpdate () {
+        if (this.state.selected === 'radio-1') {
+            return <RadarGraph />
+        } if (this.state.selected === 'radio-2') {
+            return <HeatMap />
+        }
+    };
+    render () {
+        return (
+            <div>
+                <form>
+                    <label className="radio-button">
+                        <input
+                            type="radio"
+                            id='radio-1'
+                            name='myRadio'
+                            value='radio-1'
+                            checked={this.state.selected === 'radio-1'}
+                            onChange={(e) => this.setState({ selected: e.target.value })}
+                        />
+                        Button 1
+                    </label>
+                    <label className="radio-button">
+                        <input
+                            type="radio"
+                            id='radio-2'
+                            name='myRadio'
+                            value='radio-2'
+                            checked={this.state.selected === 'radio-2'}
+                            onChange={(e) => this.setState({ selected: e.target.value })}
+                        />
+                        Button 2
+                    </label>
+                </form>
+                {this.componentDidUpdate()}
+            </div>
+        );
+    }
+};
 
 export default RadioTab;

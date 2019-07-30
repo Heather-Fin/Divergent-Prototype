@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import RadarGraph from '../../components/RadarGraph';
-import HeatMap from '../../components/HeatMap';
 import RadioTab from '../../components/RadioTabs';
 
 class LandingPage extends Component {
@@ -17,8 +15,6 @@ class LandingPage extends Component {
       <>
         <div>
           <RadioTab />
-          <RadarGraph />
-          <HeatMap />
         </div>
       </>
     );
