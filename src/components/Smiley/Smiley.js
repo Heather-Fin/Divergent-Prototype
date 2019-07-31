@@ -50,10 +50,10 @@ const Smiley = () => (
         </svg>
 
         
-        <a a href="#example" element={Link} to="/resource" className="click-here">
+        <Link to="/srengths-weaknesses" className="click-here">
             Click here to continue improving your team's diversity!
             <ChevronRight20 />
-        </a>
+        </Link>
     </div>
 );
 

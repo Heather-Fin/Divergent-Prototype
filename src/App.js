@@ -16,7 +16,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={LandingPage} />
             <Route path="/resource" component={ResourcePage} />
-            <Route path="srengths-weaknesses" component={StrengthsWeaknesses} />
+            <Route path="/srengths-weaknesses" component={StrengthsWeaknesses} />
           </Switch>
         </Content>
       </>
