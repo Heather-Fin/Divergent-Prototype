@@ -16,6 +16,7 @@ class RadioTab extends Component {
     render () {
         return (
             <div>
+                {this.componentDidUpdate()}
                 <form className='button-group'>
                     <input
                         type="radio"
@@ -40,7 +41,6 @@ class RadioTab extends Component {
                         Button 2
                     </label>
                 </form>
-                {this.componentDidUpdate()}
             </div>
         );
     }
