@@ -13,12 +13,14 @@ class LandingPage extends Component {
 
   render () {
     return ( 
-      <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
+      <div className="bx--grid bx--grid--full-width">
         <div className="bx--row">
-          <div className="bx--col-lg-16">
-            <RadioTab className='charts'/>
-            <Smiley />
-          </div>
+            <div className="bx--col charts">
+              <RadioTab />
+            </div>
+            <div className="bx--col">
+              <Smiley />
+            </div>
         </div>
       </div>
     );
