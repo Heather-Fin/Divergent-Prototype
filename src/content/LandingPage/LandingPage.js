@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import RadioTab from '../../components/RadioTabs';
+import Smiley from '../../components/Smiley';
 
 class LandingPage extends Component {
 
@@ -12,8 +13,13 @@ class LandingPage extends Component {
 
   render () {
     return ( 
-      <div className='charts'>
-        <RadioTab />
+      <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
+        <div className="bx--row">
+          <div className="bx--col-lg-16">
+            <RadioTab className='charts'/>
+            <Smiley />
+          </div>
+        </div>
       </div>
     );
   }
