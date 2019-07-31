@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import ChevronRight20 from '@carbon/icons-react/lib/chevron--right/20';
 
 const Smiley = () => (
@@ -50,7 +50,7 @@ const Smiley = () => (
         </svg>
 
         
-        <a a href="#example" className="click-here">
+        <a a href="#example" element={Link} to="/resource" className="click-here">
             Click here to continue improving your team's diversity!
             <ChevronRight20 />
         </a>
