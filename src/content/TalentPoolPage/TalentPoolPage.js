@@ -1,5 +1,6 @@
 import React from 'react';
 import Dropdown from '../../components/DropDown';
+import EmployeeCard from '../../components/EmployeeCard';
 
 const bandArray = ['6', '5', '4', '3', '2', '1'];
 const locationArray = ['Austin', 'New York', 'San Fransisco'];
@@ -24,6 +25,7 @@ const TalentPoolPage = () => {
                     </div>
                 </div>
             </div>
+            <EmployeeCard />
       </div>
   );
 };
