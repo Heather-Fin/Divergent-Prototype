@@ -10,13 +10,20 @@ const TalentPoolPage = () => {
       <div>
           <h1>Talent Pool Suggestions</h1>
           <h2>-- Based on Your Team --</h2>
-
-          <div style={{width: 200}}>
-              <Dropdown label={'Band Level'} array={bandArray} field='All'/>
-              <Dropdown label={'Location'} array={locationArray} field='Anywhere'/>
-              <Dropdown label={'Internal or External'} array={hiredArray} field='Either'/>
-          </div>
-
+          <div className="bx--grid bx--grid--full-width">
+                <div className="bx--row">
+                    <div className="bx--col">
+                        {/* <div style={{width: 200}}> */}
+                        <Dropdown label={'Band Level'} array={bandArray} field='All'/>
+                    </div>
+                    <div className="bx--col">
+                        <Dropdown label={'Location'} array={locationArray} field='Anywhere'/>
+                    </div>
+                    <div className="bx--col">
+                        <Dropdown label={'Internal or External'} array={hiredArray} field='Either'/>
+                    </div>
+                </div>
+            </div>
       </div>
   );
 };
