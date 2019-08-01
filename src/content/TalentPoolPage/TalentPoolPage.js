@@ -1,6 +1,7 @@
 import React from 'react';
 import Dropdown from '../../components/DropDown';
 import EmployeeCard from '../../components/EmployeeCard';
+import CompareButton from '../../components/CompareButton';
 
 const bandArray = ['6', '5', '4', '3', '2', '1'];
 const locationArray = ['Austin', 'New York', 'San Fransisco'];
@@ -22,6 +23,9 @@ const TalentPoolPage = () => {
                     </div>
                     <div className="bx--col">
                         <Dropdown label={'Internal or External'} array={hiredArray} field='Either'/>
+                    </div>
+                    <div className="bx--col">
+                        <CompareButton label="Compare Candidates"/>
                     </div>
                 </div>
             </div>
