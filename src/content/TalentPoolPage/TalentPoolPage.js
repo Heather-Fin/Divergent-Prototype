@@ -25,7 +25,24 @@ const TalentPoolPage = () => {
                     </div>
                 </div>
             </div>
-            <EmployeeCard />
+            <EmployeeCard
+                initials="JKY"
+                description="Lorem ipsum dolor sit amet, ex erant legere eam, quot eleifend aliquando ea vim. Erat corpora platonem quo cu. Sensibus delicatissimi eum id, mel quidam equidem ut. Vis elit vitae temporibus."
+                location="Cambridge, MA"
+                bandLevel="Band 7"
+            />
+            <EmployeeCard
+                initials="CRT"
+                description="Lorem ipsum dolor sit amet, ex erant legere eam, quot eleifend aliquando ea vim. Erat corpora platonem quo cu. Sensibus delicatissimi eum id, mel quidam equidem ut. Vis elit vitae temporibus."
+                location="Austin, TX"
+                bandLevel="Band 7"
+            />
+            <EmployeeCard
+                initials="AST"
+                description="Lorem ipsum dolor sit amet, ex erant legere eam, quot eleifend aliquando ea vim. Erat corpora platonem quo cu. Sensibus delicatissimi eum id, mel quidam equidem ut. Vis elit vitae temporibus."
+                location="San Jose, CA"
+                bandLevel="Band 8"
+            />
       </div>
   );
 };
