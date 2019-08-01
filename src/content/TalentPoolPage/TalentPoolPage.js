@@ -8,7 +8,9 @@ const TalentPoolPage = () => {
           <h2>-- Based on Your Team --</h2>
 
           <div style={{width: 200}}>
-              <Dropdown />
+              <Dropdown label={'Band Level'} />
+              <Dropdown label={'Location'} />
+              <Dropdown label={'Internal or External'} />
           </div>
 
       </div>
