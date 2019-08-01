@@ -6,6 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 import LandingPage from './content/LandingPage';
 import ResourcePage from './content/ResourcePage';
 import StrengthsWeaknesses from './content/StrengthsWeaknesses';
+import TalentPoolPage from './content/TalentPoolPage';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
             <Route exact path="/" component={LandingPage} />
             <Route path="/resource" component={ResourcePage} />
             <Route path="/srengths-weaknesses" component={StrengthsWeaknesses} />
+            <Route path="/talent-pool" component={TalentPoolPage} />
           </Switch>
         </Content>
       </>

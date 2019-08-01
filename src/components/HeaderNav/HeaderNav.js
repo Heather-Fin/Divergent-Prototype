@@ -25,6 +25,9 @@ const HeaderNav = () => (
       <HeaderMenuItem element={Link} to="/resource">
         Resources
       </HeaderMenuItem>
+      <HeaderMenuItem element={Link} to="/talent-pool">
+        Talent Pool
+      </HeaderMenuItem>
     </HeaderNavigation>
     <HeaderGlobalBar>
       <HeaderGlobalAction aria-label="Notifications">
