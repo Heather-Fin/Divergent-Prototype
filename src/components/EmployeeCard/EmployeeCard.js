@@ -18,7 +18,7 @@ class EmployeeCard extends Component {
     render() {
         return (
           <div role="group" aria-label="selectable tiles">
-            <SelectableTile id="tile-1" name="tiles" >
+            <SelectableTile id="tile-1" name="tiles" className="employee-card">
                 <div className="bx--grid bx--grid--full-width">
                     <div className="bx--row">
                         <div className="bx--col">
