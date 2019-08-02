@@ -24,7 +24,7 @@ const TalentPoolPage = () => {
                     <div className="bx--col">
                         <Dropdown label={'Internal or External'} array={hiredArray} field='Either'/>
                     </div>
-                    <div className="bx--col">
+                    <div className="bx--col compare-candidates-button">
                         <CompareButton label="Compare Candidates"/>
                     </div>
                 </div>
