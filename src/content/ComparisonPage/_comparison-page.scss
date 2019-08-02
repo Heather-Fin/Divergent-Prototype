@@ -1,3 +1,14 @@
+.comparison-page--header {
+    display: flex;
+    flex-direction: row;
+}
+
+.comparison-page--left-chevron {
+    position:absolute;
+    top:33px;
+    left:8px;
+}
+
 .comparison-page--left-header {
     margin-right: 24px;
     margin-bottom: 24px;
