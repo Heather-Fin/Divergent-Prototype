@@ -8,6 +8,11 @@
     right:0;
 }
 
+.employee-card--icon {
+    padding-right: 4px;
+    float: left;
+}
+
 h1 {
     @include carbon--type-style('productive-heading-02');
 }

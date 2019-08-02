@@ -27,22 +27,22 @@ class EmployeeCard extends Component {
                         </div>
                         <div className="bx--col">
                             <h2>Location & Band:</h2>
-                            <p><Location20 />{this.props.location}</p>
-                            <p><Flow20 />{this.props.bandLevel}</p>
+                            <p><Location20 className="employee-card--icon"/>{this.props.location}</p>
+                            <p><Flow20 className="employee-card--icon"/>{this.props.bandLevel}</p>
                         </div>
                         <div className="bx--col">
                             <h2>Enhances team in:</h2>
 
                             <div className="bx--row">
                                 <div className="bx--col">
-                                    <p><CheckMarkFilled20 />Perspective</p>
-                                    <p><CheckMarkFilled20 />Skills</p>
-                                    <p><CheckMarkFilled20 />Education</p>
+                                    <p><CheckMarkFilled20 className="employee-card--icon"/>Perspective</p>
+                                    <p><CheckMarkFilled20 className="employee-card--icon"/>Skills</p>
+                                    <p><CheckMarkFilled20 className="employee-card--icon"/>Education</p>
                                 </div>
                                 <div className="bx--col">
-                                    <p><CheckMarkFilled20 />Hobbies</p>
-                                    <p><CheckMarkFilled20 />Personality</p>
-                                    <p><CheckMarkFilled20 />Language</p>
+                                    <p><CheckMarkFilled20 className="employee-card--icon"/>Hobbies</p>
+                                    <p><CheckMarkFilled20 className="employee-card--icon"/>Personality</p>
+                                    <p><CheckMarkFilled20 className="employee-card--icon"/>Language</p>
                                 </div>
                             </div>
                         </div>
