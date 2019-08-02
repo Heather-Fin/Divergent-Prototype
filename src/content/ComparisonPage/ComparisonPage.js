@@ -9,7 +9,7 @@ import Button from 'carbon-components-react/lib/components/Button';
 //icons
 import CheckMarkFilled20 from '@carbon/icons-react/lib/checkmark--filled/20';
 //import CheckMarkOutline20 from '@carbon/icons-react/lib/checkmark--outline/20';
-import StarFilled20 from '@carbon/icons-react/lib/star--filled/20';
+import Pin20 from '@carbon/icons-react/lib/pin/20';
 import LeftChevron20 from '@carbon/icons-react/lib/chevron--left/20';
 
 const ComparisonPage = () => {
@@ -49,8 +49,8 @@ const ComparisonPage = () => {
                     <td><CheckMarkFilled20 className="comparison-page--icon"/>Languages</td>
                 </tr>
                 <tr>
-                    <td><Button>Pin<StarFilled20 className="bx--btn__icon"/></Button></td>
-                    <td><Button>Pin<StarFilled20 className="bx--btn__icon"/></Button></td>
+                    <td><Button>Pin<Pin20 className="bx--btn__icon"/></Button></td>
+                    <td><Button>Pin<Pin20 className="bx--btn__icon"/></Button></td>
                 </tr>
             </table>
         </Tile>
