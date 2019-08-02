@@ -52,7 +52,9 @@ class EmployeeCard extends Component {
                         </div>
                     </div>
                 </div>
-                <AddInfoButton />
+                <div className="employee-card-info-button">
+                    <AddInfoButton />
+                </div>
             </SelectableTile>
           </div>
         );

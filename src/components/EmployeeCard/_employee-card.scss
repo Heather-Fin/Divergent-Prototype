@@ -1,0 +1,12 @@
+.employee-card-info-button {
+    float: right;
+    margin: 0px;
+}
+
+h1 {
+    @include carbon--type-style('productive-heading-02');
+}
+
+p {
+    @include type-style('body-long-01');
+}
