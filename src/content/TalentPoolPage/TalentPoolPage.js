@@ -10,8 +10,8 @@ const hiredArray = ['Internal', 'External'];
 const TalentPoolPage = () => {
   return(
       <div>
-          <h1>Talent Pool Suggestions</h1>
-          <h2>-- Based on Your Team --</h2>
+          <h1 className="talent-pool-page--h1">Talent Pool Suggestions</h1>
+          <h2 className="talent-pool-page--h2">-- Based on Your Team --</h2>
           <div className="bx--grid bx--grid--full-width talent-pool--tool-bar">
                 <div className="bx--row">
                     <div className="bx--col">

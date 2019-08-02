@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 
 //carbon components
 import {
-    SelectableTile,
+    ClickableTile,
 } from 'carbon-components-react/lib/components/Tile';
+// import {
+//     Checkbox,
+// } from 'carbon-components-react/lib/components/Checkbox';
 
 //icons
 import Location20 from '@carbon/icons-react/lib/location/20';
@@ -18,9 +21,12 @@ class EmployeeCard extends Component {
     render() {
         return (
           <div role="group" aria-label="selectable tiles">
-            <SelectableTile id="tile-1" name="tiles" className="employee-card">
+            <ClickableTile id="tile-1" name="tiles" className="employee-card">
                 <div className="bx--grid bx--grid--full-width">
                     <div className="bx--row">
+                        <div className="bx--col">
+                            {/* <Checkbox id="checkbox-label-1" /> */}
+                        </div>
                         <div className="bx--col">
                             <h1>{this.props.initials}</h1>
                             <p>{this.props.description}</p>
@@ -55,7 +61,7 @@ class EmployeeCard extends Component {
                 <div className="employee-card-info-button">
                     <AddInfoButton />
                 </div>
-            </SelectableTile>
+            </ClickableTile>
           </div>
         );
     }
