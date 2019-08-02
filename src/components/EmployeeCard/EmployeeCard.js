@@ -4,6 +4,9 @@ import {
     SelectableTile,
 } from 'carbon-components-react/lib/components/Tile';
 
+import Location20 from '@carbon/icons-react/lib/location/20';
+import Flow20 from '@carbon/icons-react/lib/flow/20';
+
 class EmployeeCard extends Component {
     render() {
         return (
@@ -17,8 +20,8 @@ class EmployeeCard extends Component {
                         </div>
                         <div className="bx--col">
                             <h2>Location & Band:</h2>
-                            <p>{this.props.location}</p>
-                            <p>{this.props.bandLevel}</p>
+                            <p><Location20 />{this.props.location}</p>
+                            <p><Flow20 />{this.props.bandLevel}</p>
                         </div>
                         <div className="bx--col">
                             <h2>Enhances team in:</h2>
