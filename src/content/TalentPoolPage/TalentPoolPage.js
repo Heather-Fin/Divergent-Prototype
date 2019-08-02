@@ -34,18 +34,21 @@ const TalentPoolPage = () => {
                 description="Lorem ipsum dolor sit amet, ex erant legere eam, quot eleifend aliquando ea vim. Erat corpora platonem quo cu. Sensibus delicatissimi eum id, mel quidam equidem ut. Vis elit vitae temporibus."
                 location="Cambridge, MA"
                 bandLevel="Band 7"
+                startDate="October 1st, 2019"
             />
             <EmployeeCard
                 initials="CRT"
                 description="Lorem ipsum dolor sit amet, ex erant legere eam, quot eleifend aliquando ea vim. Erat corpora platonem quo cu. Sensibus delicatissimi eum id, mel quidam equidem ut. Vis elit vitae temporibus."
                 location="Austin, TX"
                 bandLevel="Band 7"
+                startDate="September 1st, 2019"
             />
             <EmployeeCard
                 initials="AST"
                 description="Lorem ipsum dolor sit amet, ex erant legere eam, quot eleifend aliquando ea vim. Erat corpora platonem quo cu. Sensibus delicatissimi eum id, mel quidam equidem ut. Vis elit vitae temporibus."
                 location="San Jose, CA"
                 bandLevel="Band 8"
+                startDate="September 1st, 2019"
             />
       </div>
   );

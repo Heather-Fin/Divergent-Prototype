@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 
+//carbon components
 import {
     SelectableTile,
 } from 'carbon-components-react/lib/components/Tile';
 
+//icons
 import Location20 from '@carbon/icons-react/lib/location/20';
 import Flow20 from '@carbon/icons-react/lib/flow/20';
+import CheckMarkFilled20 from '@carbon/icons-react/lib/checkmark--filled/20';
+import CheckMarkOutline20 from '@carbon/icons-react/lib/checkmark--outline/20';
+
+//my components
+import AddInfoButton from '../AddInfoButton';
 
 class EmployeeCard extends Component {
     render() {
@@ -25,6 +32,19 @@ class EmployeeCard extends Component {
                         </div>
                         <div className="bx--col">
                             <h2>Enhances team in:</h2>
+
+                            <div className="bx--row">
+                                <div className="bx--col">
+                                    <p><CheckMarkFilled20 />Perspective</p>
+                                    <p><CheckMarkFilled20 />Skills</p>
+                                    <p><CheckMarkFilled20 />Education</p>
+                                </div>
+                                <div className="bx--col">
+                                    <p><CheckMarkFilled20 />Hobbies</p>
+                                    <p><CheckMarkFilled20 />Personality</p>
+                                    <p><CheckMarkFilled20 />Language</p>
+                                </div>
+                            </div>
                         </div>
                         <div className="bx--col">
                             <h2>Start Date:</h2>
@@ -32,6 +52,7 @@ class EmployeeCard extends Component {
                         </div>
                     </div>
                 </div>
+                <AddInfoButton />
             </SelectableTile>
           </div>
         );
