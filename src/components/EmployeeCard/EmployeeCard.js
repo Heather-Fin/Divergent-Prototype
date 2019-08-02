@@ -10,7 +10,7 @@ import Checkbox from 'carbon-components-react/lib/components/Checkbox';
 import Location20 from '@carbon/icons-react/lib/location/20';
 import Flow20 from '@carbon/icons-react/lib/flow/20';
 import CheckMarkFilled20 from '@carbon/icons-react/lib/checkmark--filled/20';
-import CheckMarkOutline20 from '@carbon/icons-react/lib/checkmark--outline/20';
+//import CheckMarkOutline20 from '@carbon/icons-react/lib/checkmark--outline/20';
 
 //my components
 import AddInfoButton from '../AddInfoButton';

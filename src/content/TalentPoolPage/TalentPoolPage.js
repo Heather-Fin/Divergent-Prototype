@@ -25,7 +25,10 @@ const TalentPoolPage = () => {
                     </div>
                     <div className="bx--col">{/*spacing*/}</div>
                     <div className="talent-pool--compare-button">
-                        <CompareButton label="Compare Candidates"/>
+                        <CompareButton
+                            label="Compare Candidates"
+                            cantCompare={true}    
+                        />
                     </div>
                 </div>
             </div>
@@ -53,7 +56,12 @@ const TalentPoolPage = () => {
                 bandLevel="Band 8"
                 startDate="September 1st, 2019"
             />
-        <CompareButton className="talent-pool-page--bottom-button" label="Compare Candidates"/>
+        <div className="talent-pool-page--bottom-button">
+            <CompareButton
+                label="Compare Candidates"
+                cantCompare={false} 
+            />
+        </div>
       </div>
   );
 };
