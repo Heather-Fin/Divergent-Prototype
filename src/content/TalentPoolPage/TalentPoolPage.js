@@ -3,7 +3,7 @@ import Dropdown from '../../components/DropDown';
 import EmployeeCard from '../../components/EmployeeCard';
 import CompareButton from '../../components/CompareButton';
 
-const bandArray = ['6', '5', '4', '3', '2', '1'];
+const bandArray = ['6', '7', '8', '9', '10'];
 const locationArray = ['Austin', 'New York', 'San Fransisco'];
 const hiredArray = ['Internal', 'External'];
 
