@@ -15,7 +15,9 @@ import LeftChevron20 from '@carbon/icons-react/lib/chevron--left/20';
 const ComparisonPage = () => {
   return(
     <div>
-        <LeftChevron20 />
+        <a href="#/talent-pool">
+            <LeftChevron20 />
+        </a>
         <h1 className="talent-pool-page--h1">Talent Pool Comparison</h1>
         <h2 className="talent-pool-page--h2">— Compare Your Candidates —</h2>
         <Tile>

@@ -14,14 +14,15 @@
 }
 
 .employee-card--checkbox {
-    //position: absolute;
-    //top: 50%;
-    //-ms-transform: translateY(-50%);
     transform: translateY(40%);
 }
 
 h1 {
     @include carbon--type-style('productive-heading-02');
+}
+
+h2 {
+    @include carbon--type-style('productive-heading-01');
 }
 
 p {
