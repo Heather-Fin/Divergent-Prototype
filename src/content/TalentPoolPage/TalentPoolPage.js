@@ -11,8 +11,8 @@ const TalentPoolPage = () => {
   return(
       <div>
           <h1 className="talent-pool-page--h1">Talent Pool Suggestions</h1>
-          <h2 className="talent-pool-page--h2">-- Based on Your Team --</h2>
-          <div className="bx--grid bx--grid--full-width talent-pool--tool-bar">
+          <h2 className="talent-pool-page--h2">— Based on Your Team —</h2>
+          <div className="bx--grid--full-width talent-pool--tool-bar">
                 <div className="bx--row">
                     <div className="bx--col">
                         <Dropdown label={'Band Level'} array={bandArray} field='All'/>
@@ -21,15 +21,16 @@ const TalentPoolPage = () => {
                         <Dropdown label={'Location'} array={locationArray} field='Anywhere'/>
                     </div>
                     <div className="bx--col">
-                        <Dropdown label={'Internal or External'} array={hiredArray} field='Either'/>
+                        <Dropdown label={'Internal/External'} array={hiredArray} field='Either'/>
                     </div>
                     <div className="bx--col">{/*spacing*/}</div>
-                    <div className="bx--col-lg-16">
+                    <div className="talent-pool--compare-button">
                         <CompareButton label="Compare Candidates"/>
                     </div>
                 </div>
             </div>
             <EmployeeCard
+                checkMarkID="checkbox-1"
                 initials="JKY"
                 description="Lorem ipsum dolor sit amet, ex erant legere eam, quot eleifend aliquando ea vim. Erat corpora platonem quo cu. Sensibus delicatissimi eum id, mel quidam equidem ut. Vis elit vitae temporibus."
                 location="Cambridge, MA"
@@ -37,6 +38,7 @@ const TalentPoolPage = () => {
                 startDate="October 1st, 2019"
             />
             <EmployeeCard
+                checkMarkID="checkbox-2"
                 initials="CRT"
                 description="Lorem ipsum dolor sit amet, ex erant legere eam, quot eleifend aliquando ea vim. Erat corpora platonem quo cu. Sensibus delicatissimi eum id, mel quidam equidem ut. Vis elit vitae temporibus."
                 location="Austin, TX"
@@ -44,12 +46,14 @@ const TalentPoolPage = () => {
                 startDate="September 1st, 2019"
             />
             <EmployeeCard
+                checkMarkID="checkbox-3"
                 initials="AST"
                 description="Lorem ipsum dolor sit amet, ex erant legere eam, quot eleifend aliquando ea vim. Erat corpora platonem quo cu. Sensibus delicatissimi eum id, mel quidam equidem ut. Vis elit vitae temporibus."
                 location="San Jose, CA"
                 bandLevel="Band 8"
                 startDate="September 1st, 2019"
             />
+        <CompareButton className="talent-pool-page--bottom-button" label="Compare Candidates"/>
       </div>
   );
 };

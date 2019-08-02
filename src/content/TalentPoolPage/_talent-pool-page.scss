@@ -2,6 +2,7 @@
 
 .talent-pool--tool-bar {
     margin-bottom: 24px;
+    margin-right: 16px;
 }
 
 .talent-pool-page--h1 {
@@ -10,4 +11,13 @@
 
 .talent-pool-page--h2 {
     margin-bottom: 24px;
+}
+
+.talent-pool-page--bottom-button {
+    text-align: center;
+}
+
+.talent-pool--compare-button {
+    display: flex;
+    align-items: flex-end;
 }

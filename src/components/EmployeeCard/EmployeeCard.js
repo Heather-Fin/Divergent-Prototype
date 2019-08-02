@@ -4,9 +4,7 @@ import React, { Component } from 'react';
 import {
     ClickableTile,
 } from 'carbon-components-react/lib/components/Tile';
-// import {
-//     Checkbox,
-// } from 'carbon-components-react/lib/components/Checkbox';
+import Checkbox from 'carbon-components-react/lib/components/Checkbox';
 
 //icons
 import Location20 from '@carbon/icons-react/lib/location/20';
@@ -24,8 +22,8 @@ class EmployeeCard extends Component {
             <ClickableTile id="tile-1" name="tiles" className="employee-card">
                 <div className="bx--grid bx--grid--full-width">
                     <div className="bx--row">
-                        <div className="bx--col">
-                            {/* <Checkbox id="checkbox-label-1" /> */}
+                        <div className="bx--col-sm-16 employee-card--checkbox">
+                            <Checkbox id={this.props.checkMarkID} />
                         </div>
                         <div className="bx--col">
                             <h1>{this.props.initials}</h1>
