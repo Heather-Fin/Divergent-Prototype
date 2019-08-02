@@ -27,7 +27,7 @@ const TalentPoolPage = () => {
                     <div className="talent-pool--compare-button">
                         <CompareButton
                             label="Compare Candidates"
-                            cantCompare={true}    
+                            cantCompare={false}    
                         />
                     </div>
                 </div>

@@ -19,10 +19,10 @@ const ComparisonPage = () => {
         <h1 className="talent-pool-page--h1">Talent Pool Comparison</h1>
         <h2 className="talent-pool-page--h2">— Compare Your Candidates —</h2>
         <Tile>
-            <table>
-                <tr>
-                    <th><h1>JKY</h1><p>Lorem ipsum dolor sit amet, ex erant legere eam, quot eleifend aliquando ea vim. Erat corpora platonem quo cu. Sensibus delicatissimi eum id, mel quidam equidem ut. Vis elit vitae temporibus.</p></th>
-                    <th><h1>AST</h1><p>Lorem ipsum dolor sit amet, ex erant legere eam, quot eleifend aliquando ea vim. Erat corpora platonem quo cu. Sensibus delicatissimi eum id, mel quidam equidem ut. Vis elit vitae temporibus.</p></th>
+            <table className="comparison-page--tile">
+                <tr className="comparison-page--table-header">
+                    <th><h1>JKY</h1><p className="comparison-page--left-header">Lorem ipsum dolor sit amet, ex erant legere eam, quot eleifend aliquando ea vim. Erat corpora platonem quo cu. Sensibus delicatissimi eum id, mel quidam equidem ut. Vis elit vitae temporibus.</p></th>
+                    <th><h1 className="comparison-page--right-header">AST</h1><p className="comparison-page--right-header">Lorem ipsum dolor sit amet, ex erant legere eam, quot eleifend aliquando ea vim. Erat corpora platonem quo cu. Sensibus delicatissimi eum id, mel quidam equidem ut. Vis elit vitae temporibus.</p></th>
                 </tr>
                 <tr>
                     <td><CheckMarkFilled20 className="comparison-page--icon"/>Perspective</td>

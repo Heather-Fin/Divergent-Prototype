@@ -1,9 +1,13 @@
-.comparison-page--tile-border {
-    border-right: 5px solid red;
+.comparison-page--left-header {
+    margin-right: 24px;
+    margin-bottom: 24px;
+    margin-top: 24px;
 }
 
-.comparison-page--bottom-border {
-    border-bottom: 5px solid red;
+.comparison-page--right-header {
+    margin-left: 24px;
+    margin-bottom: 24px;
+    margin-top: 24px;
 }
 
 table {
@@ -20,16 +24,27 @@ th {
 }
 
 td {
-    text-align: center;
-    vertical-align: middle;
+    padding-left: 20% !important;
     padding: 16px;
 }
 
 .comparison-page--icon {
     padding-right: 4px;
-    //float: left;
 }
 
 p {
+    @include type-style('body-long-01');
+}
+
+h1 {
+    @include carbon--type-style('productive-heading-02');
+}
+
+.comparison-page--tile {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.comparison-page--table-header {
     text-align: left;
 }
