@@ -11,11 +11,19 @@ import Location20 from '@carbon/icons-react/lib/location/20';
 import Flow20 from '@carbon/icons-react/lib/flow/20';
 import CheckMarkFilled20 from '@carbon/icons-react/lib/checkmark--filled/20';
 //import CheckMarkOutline20 from '@carbon/icons-react/lib/checkmark--outline/20';
+import Plane20 from '@carbon/icons-react/lib/plane/20';
 
 //my components
 import AddInfoButton from '../AddInfoButton';
 
 class EmployeeCard extends Component {
+
+    relocation(){
+        if (this.props.relocate) {
+            return <p><Plane20 className="employee-card--icon"/>Willing to relocate</p>
+        }
+    }
+
     render() {
         return (
           <div role="group" aria-label="selectable tiles">
@@ -33,6 +41,7 @@ class EmployeeCard extends Component {
                             <h2>Location & Band:</h2>
                             <p><Location20 className="employee-card--icon"/>{this.props.location}</p>
                             <p><Flow20 className="employee-card--icon"/>{this.props.bandLevel}</p>
+                            {this.relocation()}
                         </div>
                         <div className="bx--col">
                             <h2>Enhances team in:</h2>
@@ -44,7 +53,7 @@ class EmployeeCard extends Component {
                                     <p><CheckMarkFilled20 className="employee-card--icon"/>Education</p>
                                 </div>
                                 <div className="bx--col">
-                                    <p><CheckMarkFilled20 className="employee-card--icon"/>Hobbies</p>
+                                    <p><CheckMarkFilled20 className="employee-card--icon"/>Interests</p>
                                     <p><CheckMarkFilled20 className="employee-card--icon"/>Personality</p>
                                     <p><CheckMarkFilled20 className="employee-card--icon"/>Language</p>
                                 </div>
