@@ -1,7 +1,26 @@
-@import '../../components/RadioTabs/radio-tabs';
-@import '../../components/Smiley/smiley';
+// @import '../../components/RadioTabs/radio-tabs';
+// @import '../../components/Smiley/smiley';
 
-.charts {
-    width: 550px;
-    border-right: 5px solid #f3f3f3;
+.landing-page--left-container {
+    background-color: #f3f3f3;
+    width: 40%;
+    margin-right: 45px;
+}
+
+.landing-page--radar-graph {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    height: 24%;
+}
+
+.landing-page--right-container-trainings {
+    background-color: #f3f3f3;
+    margin-left: 45px;
+    margin-bottom: 16px;
+}
+
+.landing-page--right-container-resources {
+    background-color: #f3f3f3;
+    margin-left: 45px;
+    margin-top: 16px;
 }
