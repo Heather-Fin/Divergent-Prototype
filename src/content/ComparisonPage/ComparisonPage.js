@@ -19,14 +19,14 @@ const ComparisonPage = () => {
             <a href="#/talent-pool">
                 <LeftChevron20 className="comparison-page--left-chevron"/>
             </a>
-            <h1 className="talent-pool-page--h1">Talent Pool Comparison</h1>
+            <h1 className="comparison-page--h1">Talent Pool Comparison</h1>
         </div>
-        <h2 className="talent-pool-page--h2">— Compare Your Candidates —</h2>
+        <h2 className="comparison-page--h2">— Compare Your Candidates —</h2>
         <Tile>
             <table className="comparison-page--tile">
                 <tr className="comparison-page--table-header">
-                    <th><h1>AST</h1><p className="comparison-page--left-header">I've lived in over 30 countries and love meeting new people. I have been self employed while traveling, and am comfortable with negotiating with team members.</p></th>
-                    <th><h1 className="comparison-page--right-header">HRU</h1><p className="comparison-page--right-header">I am from a large city and have experience working in a start-up environment. I work well in agile workspaces and hope to learn more about designing in a corporate workspace.</p></th>
+                    <th><h2 className="comparison-page--h1">AST</h2><p className="comparison-page--left-header comparison-page--p">I've lived in over 30 countries and love meeting new people. I have been self employed while traveling, and am comfortable with negotiating with team members.</p></th>
+                    <th><h2 className="comparison-page--right-header comparison-page--h1">HRU</h2><p className="comparison-page--right-header comparison-page--p">I am from a large city and have experience working in a start-up environment. I work well in agile workspaces and hope to learn more about designing in a corporate workspace.</p></th>
                 </tr>
                 <tr>
                     <td><CheckMarkFilled20 className="comparison-page--icon"/>Perspective</td>

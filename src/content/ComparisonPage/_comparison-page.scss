@@ -5,7 +5,7 @@
 
 .comparison-page--left-chevron {
     position:absolute;
-    top:33px;
+    top:40px;
     left:8px;
 }
 
@@ -37,18 +37,27 @@ th {
 td {
     padding-left: 20% !important;
     padding: 16px;
+    @include type-style('body-long-01');
+    color: #929292;
 }
 
 .comparison-page--icon {
     padding-right: 4px;
 }
 
-p {
+.comparison-page--p {
     @include type-style('body-long-01');
+    color: #929292;
 }
 
-h1 {
-    @include carbon--type-style('productive-heading-02');
+.comparison-page--h1 {
+    margin-bottom: 4px;
+    @include carbon--type-style('productive-heading-04');
+}
+
+.comparison-page--h2 {
+    @include carbon--type-style('productive-heading-03');
+    margin-bottom: 24px;
 }
 
 .comparison-page--tile {
