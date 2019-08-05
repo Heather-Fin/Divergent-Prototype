@@ -1,13 +1,19 @@
 .landing-page--radar-graph {
     height: 306px;
     margin-top: 39px;
-    margin-bottom: 39px;
-    margin-left: 58px;
-    margin-right: 58px;
+    margin-bottom: 32px;
+    margin-left: 32px;
+    // padding-right: 58px;
 }
 
-.landing-page--container {
+.landing-page--grey-container {
     background-color: #f3f3f3;
+    padding: 35px;
+}
+
+.landing-page--white-container {
+    background-color: white;
+    padding-bottom: 40px;
 }
 
 .landing-page--h2 {

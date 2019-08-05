@@ -1,5 +1,7 @@
 .employee-card {
     margin-bottom: 24px;
+    padding-bottom: 36px;
+    padding-top: 36px;
 }
 
 .employee-card--info-button {
@@ -26,14 +28,15 @@
     transform: translateY(40%);
 }
 
-h1 {
-    @include carbon--type-style('productive-heading-02');
+.employee-card--h1 {
+    @include carbon--type-style('productive-heading-05');
 }
 
 h2 {
-    @include carbon--type-style('productive-heading-01');
+    @include carbon--type-style('productive-heading-03');
 }
 
-p {
+.employee-card--p {
+    margin-top: 18px;
     @include type-style('body-long-01');
 }

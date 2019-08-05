@@ -3,6 +3,7 @@ import './app.scss';
 import { Content } from 'carbon-components-react/lib/components/UIShell';
 import HeaderNav from './components/HeaderNav';
 import { Route, Switch } from 'react-router-dom';
+
 import LandingPage from './content/LandingPage';
 import ResourcePage from './content/ResourcePage';
 import StrengthsWeaknesses from './content/StrengthsWeaknesses';

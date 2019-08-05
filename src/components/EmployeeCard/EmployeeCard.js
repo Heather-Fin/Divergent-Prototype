@@ -33,7 +33,7 @@ class EmployeeCard extends Component {
     // determines if the employee card will show able to relocate or not
     relocation(){
         if (this.props.relocate) {
-            return <p><Plane20 className="employee-card--icon"/>Willing to relocate</p>
+            return <p className="employee-card--p"><Plane20 className="employee-card--icon"/>Willing to relocate</p>
         }
     }
 
@@ -55,35 +55,35 @@ class EmployeeCard extends Component {
                         <div className="bx--col-sm-16 employee-card--checkbox">
                             <Checkbox id={this.props.checkMarkID} />
                         </div>
-                        <div className="bx--col">
-                            <h1>{this.props.initials}</h1>
-                            <p>{this.props.description}</p>
+                        <div className="bx--col-md-3">
+                            <h1 className="employee-card--h1">{this.props.initials}</h1>
+                            <p className="employee-card--p">{this.props.description}</p>
                         </div>
                         <div className="bx--col">
                             <h2>Location & Band:</h2>
-                            <p><Location20 className="employee-card--icon"/>{this.props.location}</p>
-                            <p><Flow20 className="employee-card--icon"/>{this.props.bandLevel}</p>
+                            <p className="employee-card--p"><Location20 className="employee-card--icon"/>{this.props.location}</p>
+                            <p className="employee-card--p"><Flow20 className="employee-card--icon"/>{this.props.bandLevel}</p>
                             {this.relocation()}
                         </div>
-                        <div className="bx--col">
+                        <div className="bx--col-md-2">
                             <h2>Enhances team in:</h2>
 
                             <div className="bx--row">
                                 <div className="bx--col">
-                                    <p>{this.checked(this.props.perspective)}Perspective</p>
-                                    <p>{this.checked(this.props.skills)}Skills</p>
-                                    <p>{this.checked(this.props.education)}Education</p>
+                                    <p className="employee-card--p">{this.checked(this.props.perspective)}Perspective</p>
+                                    <p className="employee-card--p">{this.checked(this.props.skills)}Skills</p>
+                                    <p className="employee-card--p">{this.checked(this.props.education)}Education</p>
                                 </div>
                                 <div className="bx--col">
-                                    <p>{this.checked(this.props.interests)}Interests</p>
-                                    <p>{this.checked(this.props.personality)}Personality</p>
-                                    <p>{this.checked(this.props.language)}Language</p>
+                                    <p className="employee-card--p">{this.checked(this.props.interests)}Interests</p>
+                                    <p className="employee-card--p">{this.checked(this.props.personality)}Personality</p>
+                                    <p className="employee-card--p">{this.checked(this.props.language)}Language</p>
                                 </div>
                             </div>
                         </div>
                         <div className="bx--col">
                             <h2>Start Date:</h2>
-                            <p>{this.props.startDate}</p>
+                            <p className="employee-card--p">{this.props.startDate}</p>
                         </div>
                     </div>
                 </div>
