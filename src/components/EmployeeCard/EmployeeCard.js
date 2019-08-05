@@ -19,6 +19,17 @@ import AddInfoButton from '../AddInfoButton';
 
 class EmployeeCard extends Component {
 
+    state = {
+        pinned: false
+    };
+
+    // determines if the employee card will be pinned or not
+    isPinned(){
+        if (this.state.pinned){
+            return <div className="employee-card--pinned"><Pin20 /></div>
+        }
+    }
+
     // determines if the employee card will show able to relocate or not
     relocation(){
         if (this.props.relocate) {
@@ -76,9 +87,7 @@ class EmployeeCard extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="employee-card--pinned">
-                    <Pin20 />
-                </div>
+                {this.isPinned()}
                 <div className="employee-card--info-button">
                     <AddInfoButton />
                 </div>

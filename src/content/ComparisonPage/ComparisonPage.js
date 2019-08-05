@@ -25,24 +25,24 @@ const ComparisonPage = () => {
         <Tile>
             <table className="comparison-page--tile">
                 <tr className="comparison-page--table-header">
-                    <th><h1>HRU</h1><p className="comparison-page--left-header">Lorem ipsum dolor sit amet, ex erant legere eam, quot eleifend aliquando ea vim. Erat corpora platonem quo cu. Sensibus delicatissimi eum id, mel quidam equidem ut. Vis elit vitae temporibus.</p></th>
-                    <th><h1 className="comparison-page--right-header">AST</h1><p className="comparison-page--right-header">Lorem ipsum dolor sit amet, ex erant legere eam, quot eleifend aliquando ea vim. Erat corpora platonem quo cu. Sensibus delicatissimi eum id, mel quidam equidem ut. Vis elit vitae temporibus.</p></th>
+                    <th><h1>AST</h1><p className="comparison-page--left-header">I've lived in over 30 countries and love meeting new people. I have been self employed while traveling, and am comfortable with negotiating with team members.</p></th>
+                    <th><h1 className="comparison-page--right-header">HRU</h1><p className="comparison-page--right-header">I am from a large city and have experience working in a start-up environment. I work well in agile workspaces and hope to learn more about designing in a corporate workspace.</p></th>
                 </tr>
                 <tr>
                     <td><CheckMarkFilled20 className="comparison-page--icon"/>Perspective</td>
                     <td><CheckMarkFilled20 className="comparison-page--icon"/>Perspective</td>
                 </tr>
                 <tr>
-                    <td><CheckMarkFilled20 className="comparison-page--icon"/>Skills</td>
                     <td><CheckMarkOutline20 className="comparison-page--icon"/>Skills</td>
+                    <td><CheckMarkFilled20 className="comparison-page--icon"/>Skills</td>
                 </tr>
                 <tr>
                     <td><CheckMarkFilled20 className="comparison-page--icon"/>Education</td>
                     <td><CheckMarkFilled20 className="comparison-page--icon"/>Education</td>
                 </tr>
                 <tr>
-                    <td><CheckMarkOutline20 className="comparison-page--icon"/>Interests</td>
                     <td><CheckMarkFilled20 className="comparison-page--icon"/>Interests</td>
+                    <td><CheckMarkOutline20 className="comparison-page--icon"/>Interests</td>
                 </tr>
                 <tr>
                     <td><CheckMarkFilled20 className="comparison-page--icon"/>Personality</td>
@@ -53,8 +53,16 @@ const ComparisonPage = () => {
                     <td><CheckMarkOutline20 className="comparison-page--icon"/>Languages</td>
                 </tr>
                 <tr>
-                    <td><Button>Pin<Pin20 className="bx--btn__icon"/></Button></td>
-                    <td><Button>Pin<Pin20 className="bx--btn__icon"/></Button></td>
+                    <td>
+                        <Button onClick={console.log('clicked meee 1')}>
+                            Pin Candidate<Pin20 className="bx--btn__icon"/>
+                        </Button>
+                    </td>
+                    <td>
+                        <Button onClick={console.log('clicked meee 1')}>
+                            Pin Candidate<Pin20 className="bx--btn__icon"/>
+                        </Button>
+                    </td>
                 </tr>
             </table>
         </Tile>

@@ -35,7 +35,7 @@ const TalentPoolPage = () => {
             <EmployeeCard
                 checkMarkID="checkbox-1"
                 initials="HRU"
-                description="Lorem ipsum dolor sit amet, ex erant legere eam, quot eleifend aliquando ea vim. Erat corpora platonem quo cu. Sensibus delicatissimi eum id, mel quidam equidem ut. Vis elit vitae temporibus."
+                description="I am from a large city and have experience working in a start-up environment. I work well in agile workspaces and hope to learn more about designing in a corporate workspace."
                 location="Cambridge, MA"
                 bandLevel="Band 7"
                 relocate={true}
@@ -50,7 +50,7 @@ const TalentPoolPage = () => {
             <EmployeeCard
                 checkMarkID="checkbox-2"
                 initials="CRT"
-                description="Lorem ipsum dolor sit amet, ex erant legere eam, quot eleifend aliquando ea vim. Erat corpora platonem quo cu. Sensibus delicatissimi eum id, mel quidam equidem ut. Vis elit vitae temporibus."
+                description="I am passionate about social sciences and incorporating them into design. I come from a culturally diverse city and have worked at large companies similar to IBM's size in the past."
                 location="Austin, TX"
                 bandLevel="Band 7"
                 relocate={false}
@@ -65,7 +65,7 @@ const TalentPoolPage = () => {
             <EmployeeCard
                 checkMarkID="checkbox-3"
                 initials="AST"
-                description="Lorem ipsum dolor sit amet, ex erant legere eam, quot eleifend aliquando ea vim. Erat corpora platonem quo cu. Sensibus delicatissimi eum id, mel quidam equidem ut. Vis elit vitae temporibus."
+                description="I've lived in over 30 countries and love meeting new people. I have been self employed while traveling, and am comfortable with negotiating with team members."
                 location="San Jose, CA"
                 bandLevel="Band 8"
                 relocate={true}
