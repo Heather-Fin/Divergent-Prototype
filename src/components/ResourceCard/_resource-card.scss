@@ -5,5 +5,12 @@
 
 .tile {
     margin-bottom: 40px;
-    height: 200px;
+    height: 300px;
+    width: 250px;
+}
+
+.resource-card--button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }

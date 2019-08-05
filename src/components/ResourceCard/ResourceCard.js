@@ -11,11 +11,13 @@ import Add20 from '@carbon/icons-react/lib/add/20';
 const ResourceCard = () => (
     
     <ClickableTile className='tile'>
-        <h2 className='cardTitle'>Resource Tile</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <Button>
-            Add to Your Learning<Add20 className="bx--btn__icon"/>
-        </Button>
+        <div>
+            <h2 className='cardTitle'>Resource Tile</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <Button className="resource-card--button">
+                Add to Your Learning<Add20 className="bx--btn__icon"/>
+            </Button>
+        </div>
     </ClickableTile>
 );
 
