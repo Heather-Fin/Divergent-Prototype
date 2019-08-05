@@ -39,6 +39,12 @@ const TalentPoolPage = () => {
                 location="Cambridge, MA"
                 bandLevel="Band 7"
                 relocate={true}
+                perspective={true}
+                skills={true}
+                education={true}
+                interests={false}
+                personality={true}
+                language={false}
                 startDate="October 1st, 2019"
             />
             <EmployeeCard
@@ -48,6 +54,12 @@ const TalentPoolPage = () => {
                 location="Austin, TX"
                 bandLevel="Band 7"
                 relocate={false}
+                perspective={false}
+                skills={true}
+                education={false}
+                interests={true}
+                personality={false}
+                language={true}
                 startDate="September 1st, 2019"
             />
             <EmployeeCard
@@ -57,6 +69,12 @@ const TalentPoolPage = () => {
                 location="San Jose, CA"
                 bandLevel="Band 8"
                 relocate={true}
+                perspective={true}
+                skills={false}
+                education={true}
+                interests={true}
+                personality={true}
+                language={false}
                 startDate="September 1st, 2019"
             />
         <div className="talent-pool-page--bottom-button">

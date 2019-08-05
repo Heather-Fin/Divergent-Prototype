@@ -1,26 +1,36 @@
 import React, { Component } from 'react';
 
-//carbon components
+// carbon components
 import {
     ClickableTile,
 } from 'carbon-components-react/lib/components/Tile';
 import Checkbox from 'carbon-components-react/lib/components/Checkbox';
 
-//icons
+// icons
 import Location20 from '@carbon/icons-react/lib/location/20';
 import Flow20 from '@carbon/icons-react/lib/flow/20';
 import CheckMarkFilled20 from '@carbon/icons-react/lib/checkmark--filled/20';
-//import CheckMarkOutline20 from '@carbon/icons-react/lib/checkmark--outline/20';
+import CheckMarkOutline20 from '@carbon/icons-react/lib/checkmark--outline/20';
 import Plane20 from '@carbon/icons-react/lib/plane/20';
 
-//my components
+// my components
 import AddInfoButton from '../AddInfoButton';
 
 class EmployeeCard extends Component {
 
+    // determines if the employee card will show able to relocate or not
     relocation(){
         if (this.props.relocate) {
             return <p><Plane20 className="employee-card--icon"/>Willing to relocate</p>
+        }
+    }
+
+    // returns either a filled checkbox or unfilled one based on the feature passed
+    checked(feature){
+        if (feature){
+            return <CheckMarkFilled20 className="employee-card--icon"/>
+        } else {
+            return <CheckMarkOutline20 className="employee-card--icon"/>
         }
     }
 
@@ -48,14 +58,14 @@ class EmployeeCard extends Component {
 
                             <div className="bx--row">
                                 <div className="bx--col">
-                                    <p><CheckMarkFilled20 className="employee-card--icon"/>Perspective</p>
-                                    <p><CheckMarkFilled20 className="employee-card--icon"/>Skills</p>
-                                    <p><CheckMarkFilled20 className="employee-card--icon"/>Education</p>
+                                    <p>{this.checked(this.props.perspective)}Perspective</p>
+                                    <p>{this.checked(this.props.skills)}Skills</p>
+                                    <p>{this.checked(this.props.education)}Education</p>
                                 </div>
                                 <div className="bx--col">
-                                    <p><CheckMarkFilled20 className="employee-card--icon"/>Interests</p>
-                                    <p><CheckMarkFilled20 className="employee-card--icon"/>Personality</p>
-                                    <p><CheckMarkFilled20 className="employee-card--icon"/>Language</p>
+                                    <p>{this.checked(this.props.interests)}Interests</p>
+                                    <p>{this.checked(this.props.personality)}Personality</p>
+                                    <p>{this.checked(this.props.language)}Language</p>
                                 </div>
                             </div>
                         </div>
