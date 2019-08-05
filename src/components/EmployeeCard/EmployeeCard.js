@@ -19,15 +19,12 @@ import AddInfoButton from '../AddInfoButton';
 
 class EmployeeCard extends Component {
 
-    state = {
-        pinned: false
-    };
 
     // determines if the employee card will be pinned or not
     isPinned(){
-        if (this.state.pinned){
-            return <div className="employee-card--pinned"><Pin20 /></div>
-        }
+        // if (this.state.pinned){
+        //     return <div className="employee-card--pinned"><Pin20 /></div>
+        // }
     }
 
     // determines if the employee card will show able to relocate or not
@@ -46,6 +43,10 @@ class EmployeeCard extends Component {
         }
     }
 
+    handleChange = () => {
+        this.props.handleSelectedEmployees(this.props.id)
+    }
+
     render() {
         return (
           <div role="group" aria-label="selectable tiles">
@@ -53,7 +54,10 @@ class EmployeeCard extends Component {
                 <div className="bx--grid bx--grid--full-width">
                     <div className="bx--row">
                         <div className="bx--col-sm-16 employee-card--checkbox">
-                            <Checkbox id={this.props.checkMarkID} />
+                            <Checkbox
+                                id={this.props.checkMarkID}
+                                onChange={this.handleChange}
+                            />
                         </div>
                         <div className="bx--col-md-3">
                             <h1 className="employee-card--h1">{this.props.initials}</h1>

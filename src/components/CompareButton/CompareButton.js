@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 import Button from 'carbon-components-react/lib/components/Button';
+import { Link } from 'react-router-dom';
 
 class CompareButton extends Component {
 
     render() {
         return (
-            <>
-                <a href="#/comparison">
-                    <Button
-                        disabled={this.props.cantCompare}  
-                    >
-                        Compare Candidates
-                    </Button>
-                </a>
-            </>
-        );
+            <Link to="/comparison?id1=3&">
+                <Button
+                    disabled={this.props.disabled}  
+                >
+                    Compare Candidates
+                </Button>
+            </Link>
+    );
     }
 }
 
