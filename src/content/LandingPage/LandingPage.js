@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import RadarGraphImg from '../../assets/RadarGraph.png';
-import ResourceCard from '../../components/ResourceCard';
+//import ResourceCard from '../../components/ResourceCard';
 
 // icons
 import CheckMarkFilled20 from '@carbon/icons-react/lib/checkmark--filled/20';
@@ -14,6 +14,12 @@ class LandingPage extends Component {
         <div className="bx--row">
             <div className="bx--col-md-4 landing-page--container">
               <img src={RadarGraphImg} alt="Radar graph chart of mockup data" className="landing-page--radar-graph" />
+              <div className="bx--row landing-page--chart-legend">
+                <div className="landing-page--square-pink" />
+                <p>Your Current Team</p>
+                <div className="landing-page--square-blue" />
+                <p>Business Unit Avg.</p>
+              </div>
             </div>
             <div className="bx--col-md-2 landing-page--container">
               <h2 className="landing-page--h2">Your Strengths:</h2>

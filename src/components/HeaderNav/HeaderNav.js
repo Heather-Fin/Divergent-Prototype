@@ -19,7 +19,7 @@ const HeaderNav = () => (
   <Header aria-label="Diversity Manager Tool">
     <SkipToContent />
     <HeaderName element={Link} to="/" prefix="IBM">
-      Diversity Manager Tool
+      Diversity Hub
     </HeaderName>
     <HeaderNavigation aria-label="Diversity Manager Tool">
       <HeaderMenuItem element={Link} to="/resource">

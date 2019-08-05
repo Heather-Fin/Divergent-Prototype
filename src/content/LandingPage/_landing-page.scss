@@ -1,10 +1,9 @@
 .landing-page--radar-graph {
-    //height: 306px;
-    height: 25%;
+    height: 306px;
     margin-top: 39px;
     margin-bottom: 39px;
-    margin-left: 69.46px;
-    margin-right: 58.54px;
+    margin-left: 58px;
+    margin-right: 58px;
 }
 
 .landing-page--container {
@@ -28,4 +27,26 @@
 
 .landing-page--icons {
     padding-right: 16px;
+    float: left;
+}
+
+.landing-page--chart-legend {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.landing-page--square-pink {
+    height: 20px;
+    width: 20px;
+    background-color: #F2C7CB;
+    margin-right: 6px;
+}
+
+.landing-page--square-blue {
+    height: 20px;
+    width: 20px;
+    background-color: #C2D9E8;
+    margin-right: 6px;
+    margin-left: 12px;
 }
