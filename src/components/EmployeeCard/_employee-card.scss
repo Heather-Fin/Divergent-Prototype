@@ -2,10 +2,19 @@
     margin-bottom: 24px;
 }
 
-.employee-card-info-button {
+.employee-card--info-button {
     position:absolute;
     bottom:0;
     right:0;
+}
+
+.employee-card--pinned {
+    position:absolute;
+    top:0;
+    right:0;
+    padding: 8px;
+    fill: white;
+    background-color: black;
 }
 
 .employee-card--icon {

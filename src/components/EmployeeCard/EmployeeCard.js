@@ -12,6 +12,7 @@ import Flow20 from '@carbon/icons-react/lib/flow/20';
 import CheckMarkFilled20 from '@carbon/icons-react/lib/checkmark--filled/20';
 import CheckMarkOutline20 from '@carbon/icons-react/lib/checkmark--outline/20';
 import Plane20 from '@carbon/icons-react/lib/plane/20';
+import Pin20 from '@carbon/icons-react/lib/pin/20';
 
 // my components
 import AddInfoButton from '../AddInfoButton';
@@ -75,7 +76,10 @@ class EmployeeCard extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="employee-card-info-button">
+                <div className="employee-card--pinned">
+                    <Pin20 />
+                </div>
+                <div className="employee-card--info-button">
                     <AddInfoButton />
                 </div>
             </ClickableTile>
