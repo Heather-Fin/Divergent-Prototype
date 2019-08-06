@@ -9,12 +9,13 @@
 
 .landing-page--grey-container {
     background-color: #f3f3f3;
-    padding: 35px;
+    padding: 36px;
     margin-bottom: 40px;
 }
 
 .landing-page--white-container {
     background-color: white;
+    padding-bottom: 32px;
 }
 
 .landing-page--white-bg {
@@ -80,8 +81,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 30px;
 }
 
 .landing-page--resource-card-grp {
-    padding-left: 53px;
+    padding-left: 100px;
 }

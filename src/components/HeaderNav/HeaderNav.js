@@ -26,7 +26,7 @@ const HeaderNav = () => (
         Resources
       </HeaderMenuItem> */}
       <HeaderMenuItem element={Link} to="/talent-pool">
-        Talent Pool
+        Talent Pool Suggestions
       </HeaderMenuItem>
     </HeaderNavigation>
     <HeaderGlobalBar>
