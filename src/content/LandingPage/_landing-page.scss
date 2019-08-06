@@ -1,4 +1,5 @@
 @import './../../components/ResourceCard/resource-card';
+@import '../../components/Catagory/category';
 
 .landing-page--radar-graph {
     height: 306px;
@@ -32,22 +33,6 @@
 .landing-page--h2 {
     margin-top: 96px;
     @include carbon--type-style('productive-heading-03');
-}
-
-.landing-page--h3 {
-    margin-top: 24px;
-    @include carbon--type-style('productive-heading-02');
-}
-
-.landing-page--p {
-    margin-top: 8px;
-    @include type-style('body-long-01');
-    color: #929292;
-}
-
-.landing-page--icons {
-    padding-right: 4px;
-    float: left;
 }
 
 .landing-page--chart-legend {

@@ -14,6 +14,7 @@ export default [
         personality: true,
         language: false,
         startDate:"October 1st, 2019",
+        pinned: true,
     }, 
     {
         id: 2,
@@ -29,7 +30,8 @@ export default [
         interests: true,
         personality: false,
         language: true,
-        startDate: "September 1st, 2019"
+        startDate: "September 1st, 2019",
+        pinned: false,
     },
     {
         id: 3,
@@ -46,5 +48,6 @@ export default [
         personality: true,
         language: false,
         startDate: "September 1st, 2019",
+        pinned: false,
     }
 ]

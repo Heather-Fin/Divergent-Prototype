@@ -22,9 +22,9 @@ class EmployeeCard extends Component {
 
     // determines if the employee card will be pinned or not
     isPinned(){
-        // if (this.state.pinned){
-        //     return <div className="employee-card--pinned"><Pin20 /></div>
-        // }
+        if (this.props.pinned){
+             return <div className="employee-card--pinned"><Pin20 /></div>
+        }
     }
 
     // determines if the employee card will show able to relocate or not

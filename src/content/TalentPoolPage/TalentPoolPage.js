@@ -69,6 +69,7 @@ const TalentPoolPage = () => {
                     id={employee.id}
                     key={employee.id}
                     handleSelectedEmployees={handleSelectedEmployees}
+                    pinned={employee.pinned}
                 />
             ))}
         <div className="talent-pool-page--bottom-button">

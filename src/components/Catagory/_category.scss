@@ -1,0 +1,19 @@
+.catagory--flexin {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.catagory--icons {
+    padding-right: 4px;
+    width: 20px;
+}
+
+.catagory--h3 {
+    @include carbon--type-style('productive-heading-02');
+}
+
+.catagory--p {
+    margin-top: 8px;
+    @include type-style('body-long-01');
+    color: #929292;
+}
