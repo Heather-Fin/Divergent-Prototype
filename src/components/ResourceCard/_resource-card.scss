@@ -1,10 +1,13 @@
 .tile {
-    margin-left: 53px;
-    height: 245px;
-    width: 186px;
+    margin-left: 40px;
+    height: 280px;
+    width: 190px;
+    margin-bottom: 16px;
+    background-color: white;
 }
 
 .resource-card--h2 {
+    padding-top: 72px;
     @include carbon--type-style('productive-heading-02');
 }
 
@@ -18,4 +21,13 @@
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.resource-card--image-holder {
+    background-color: #D8D8D8;
+    width: 190px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
