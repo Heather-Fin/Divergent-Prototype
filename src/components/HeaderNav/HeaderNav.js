@@ -22,9 +22,9 @@ const HeaderNav = () => (
       Diversity Hub
     </HeaderName>
     <HeaderNavigation aria-label="Diversity Manager Tool">
-      <HeaderMenuItem element={Link} to="/resource">
+      {/* <HeaderMenuItem element={Link} to="/resource">
         Resources
-      </HeaderMenuItem>
+      </HeaderMenuItem> */}
       <HeaderMenuItem element={Link} to="/talent-pool">
         Talent Pool
       </HeaderMenuItem>

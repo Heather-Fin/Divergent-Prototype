@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import {
     ClickableTile,
@@ -8,17 +8,21 @@ import Button from 'carbon-components-react/lib/components/Button';
 
 import Add20 from '@carbon/icons-react/lib/add/20';
 
-const ResourceCard = () => (
+class ResourceCard extends Component {
     
-    <ClickableTile className='tile'>
-        <div>
-            <h2 className='resource-card--h2'>Resource Tile</h2>
-            <p className="resource-card--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <Button className="resource-card--button">
-                Add to Your Learning<Add20 className="bx--btn__icon"/>
-            </Button>
-        </div>
-    </ClickableTile>
-);
+    render() {
+        return (
+            <ClickableTile className='tile'>
+                <div>
+                    <h2 className='resource-card--h2'>{this.props.title}</h2>
+                    <p className="resource-card--p">{this.props.description}</p>
+                    <Button className="resource-card--button">
+                        Add to Your Learning<Add20 className="bx--btn__icon"/>
+                    </Button>
+                </div>
+            </ClickableTile>
+        );
+    };
+}
 
 export default ResourceCard;

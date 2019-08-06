@@ -7,6 +7,8 @@ import CheckMarkFilled20 from '@carbon/icons-react/lib/checkmark--filled/20';
 import ErrorFilled20 from '@carbon/icons-react/lib/error--filled/20';
 import ChevronRight32 from '@carbon/icons-react/lib/chevron--right/32';
 
+import resourceData from '../../data/resources';
+
 class LandingPage extends Component {
 
   render () {
@@ -48,9 +50,13 @@ class LandingPage extends Component {
           <div className="bx--col-lg-1">{/*spacing*/}</div>
           <div className="bx--col">
             <div className="bx--row">
-              <ResourceCard className="landing-page--resource-card"/>
-              <ResourceCard className="landing-page--resource-card"/>
-              <ResourceCard className="landing-page--resource-card"/>
+              {resourceData.map(resource => (
+                <ResourceCard 
+                  className="landing-page--resource-card"
+                  title={resource.title}
+                  description={resource.description}
+                />
+              ))}
             </div>
           </div>
           <div className="bx--col-lg-1 landing-page--see-more">
