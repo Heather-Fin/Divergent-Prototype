@@ -7,9 +7,9 @@ class Catagory extends Component {
     // returns either a check or slash icon
     pickIcon(strength){
         if (strength){
-            return <CheckMarkFilled20 className="employee-card--icon"/>
+            return <CheckMarkFilled20 className="catagory--icon"/>
         } else {
-            return <ErrorFilled20 className="employee-card--icon"/>
+            return <ErrorFilled20 className="catagory--icon"/>
         }
     }
 

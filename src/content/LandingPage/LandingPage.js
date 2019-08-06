@@ -18,12 +18,6 @@ class LandingPage extends Component {
           <div className="bx--row landing-page--grey-container">
             <div className="bx--col-md-4 landing-page--white-container">
               <img src={RadarGraphImg} alt="Radar graph chart of mockup data" className="landing-page--radar-graph" />
-              {/* <div className="bx--row landing-page--chart-legend">
-                <div className="landing-page--square-pink" />
-                <p>Your Current Team</p>
-                <div className="landing-page--square-blue" />
-                <p>Business Unit Avg.</p>
-              </div> */}
             </div>
             <div className="bx--col-md-2 landing-page--white-container">
               <h2 className="landing-page--h2">Your Strengths:</h2>
