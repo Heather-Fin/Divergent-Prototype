@@ -6,8 +6,6 @@ import ResourceCard from '../../components/ResourceCard';
 import Catagory from '../../components/Catagory';
 
 // icons
-import CheckMarkFilled20 from '@carbon/icons-react/lib/checkmark--filled/20';
-import ErrorFilled20 from '@carbon/icons-react/lib/error--filled/20';
 import ChevronRight32 from '@carbon/icons-react/lib/chevron--right/32';
 
 import resourceData from '../../data/resources';
@@ -32,10 +30,12 @@ class LandingPage extends Component {
                 <Catagory 
                   title="Education:"
                   description="Your team has a wide variety of educational backgrounds and certifications. This means your team is well-equipped to tackle problems from many different academic perspectives."
+                  strength={true}
                 />
                 <Catagory
                   title="Languages:"
                   description="Your team has a diverse set of communication styles, meaning your team has many ways of listening and sharing ideas."
+                  strength={true}
                 />
             </div>
             <div className="bx--col-md-2 landing-page--white-container">
@@ -43,10 +43,12 @@ class LandingPage extends Component {
                 <Catagory
                   title="Skills:"
                   description="Your team's skills are limited mostly to technical experience. Tap into your team's potential to grow their skillset through the resources below."
-                /> <br/><br/><br/><br/>
+                  strength={false}
+                /> <br/><br/>
                 <Catagory
                   title="Culture:"
                   description="Having a low score in culture means your team comes from similar backgrounds. You may have a limited perspective when tackling new projects."
+                  strength={false}
                 />
             </div>
           </div>
