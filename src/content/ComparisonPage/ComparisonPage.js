@@ -12,13 +12,15 @@ import CheckMarkOutline20 from '@carbon/icons-react/lib/checkmark--outline/20';
 import Pin20 from '@carbon/icons-react/lib/pin/20';
 import LeftChevron20 from '@carbon/icons-react/lib/chevron--left/20';
 
+import { Link } from 'react-router-dom';
+
 const ComparisonPage = () => {
   return(
     <div>
         <div className="comparison-page--header">
-            <a href="#/talent-pool">
+            <Link to="/talent-pool">
                 <LeftChevron20 className="comparison-page--left-chevron"/>
-            </a>
+            </Link>
             <h1 className="comparison-page--h1">Talent Pool Comparison</h1>
         </div>
         <h2 className="comparison-page--h2">— Compare Your Candidates —</h2>

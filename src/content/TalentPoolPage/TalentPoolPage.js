@@ -14,7 +14,15 @@ const TalentPoolPage = () => {
 
     function handleSelectedEmployees(id){
         const selectedEmployee = employees.find(employee => employee.id === id)
-        setSelectedEmployees([...selectedEmployees, selectedEmployee])
+
+        // if item is already checked, remove it from array
+        if(selectedEmployees.includes(selectedEmployee)){
+            selectedEmployees.splice( selectedEmployees.indexOf(selectedEmployee), 1 );
+            setSelectedEmployees([...selectedEmployees])
+        // item is not checked, adds it to array of selected employees
+        } else {
+            setSelectedEmployees([...selectedEmployees, selectedEmployee])
+        }
     }
 
     console.log(selectedEmployees);
