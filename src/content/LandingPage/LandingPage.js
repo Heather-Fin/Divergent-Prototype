@@ -5,14 +5,15 @@ import ResourceCard from '../../components/ResourceCard';
 // icons
 import CheckMarkFilled20 from '@carbon/icons-react/lib/checkmark--filled/20';
 import ErrorFilled20 from '@carbon/icons-react/lib/error--filled/20';
+import ChevronRight32 from '@carbon/icons-react/lib/chevron--right/32';
 
 class LandingPage extends Component {
 
   render () {
     return ( 
       <div className="bx--grid bx--grid--full-width">
-        <div className="landing-page--grey-container">
-          <div className="bx--row landing-page--white-container">
+        {/* <div className="landing-page--grey-container"> */}
+          <div className="bx--row landing-page--grey-container">
             <div className="bx--col-md-4">
               <img src={RadarGraphImg} alt="Radar graph chart of mockup data" className="landing-page--radar-graph" />
               <div className="bx--row landing-page--chart-legend">
@@ -37,14 +38,25 @@ class LandingPage extends Component {
               <p className="landing-page--p">Having a low score in culture means your team comes from similar backgrounds. You may have a limited perspective when tackling new projects.</p>
             </div>
           </div>
-        </div>
-        <div className="bx--row">
-          <h1>Suggested Resources</h1>
-          <p>Learn how to empower and diversify your team! These IBM resources were selected based on the areas your team has the most room to improve in.</p>
-          <p>You can access these tools now, or bookmark them to YourLearning for later access.</p>
-          <ResourceCard />
-          <ResourceCard />
-          <ResourceCard />
+        {/* </div> */}
+        <div className="bx--row landing-page--grey-container">
+          <div className="bx--col-lg-3">
+            <h1 className="landing-page--h1">Suggested Resources</h1>
+            <p className="landing-page--p">Learn how to empower and diversify your team! These IBM resources were selected based on the areas your team has the most room to improve in.</p>
+            <p className="landing-page--p">You can access these tools now, or bookmark them to YourLearning for later access.</p>
+          </div>
+          <div className="bx--col-lg-1">{/*spacing*/}</div>
+          <div className="bx--col">
+            <div className="bx--row">
+              <ResourceCard className="landing-page--resource-card"/>
+              <ResourceCard className="landing-page--resource-card"/>
+              <ResourceCard className="landing-page--resource-card"/>
+            </div>
+          </div>
+          <div className="bx--col-lg-1">
+            <ChevronRight32 className="landing-page--chevron"/>
+            <p>See more</p>
+          </div>
         </div>
       </div>
     );

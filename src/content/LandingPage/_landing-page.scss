@@ -1,3 +1,5 @@
+@import './../../components/ResourceCard/resource-card';
+
 .landing-page--radar-graph {
     height: 306px;
     margin-top: 39px;
@@ -8,26 +10,28 @@
 .landing-page--grey-container {
     background-color: #f3f3f3;
     padding: 35px;
+    padding-bottom: 40px;
+    border: 5px solid red;
 }
 
-.landing-page--white-container {
-    background-color: white;
-    padding-bottom: 40px;
+.landing-page--h1 {
+    @include carbon--type-style('productive-heading-04');
 }
 
 .landing-page--h2 {
     margin-top: 96px;
-    font-size: 18px;
+    @include carbon--type-style('productive-heading-03');
 }
 
 .landing-page--h3 {
     margin-top: 24px;
-    font-size: 12px;
+    @include carbon--type-style('productive-heading-02');
 }
 
 .landing-page--p {
     margin-top: 8px;
-    font-size: 12px;
+    @include type-style('body-long-01');
+    color: #929292;
 }
 
 .landing-page--icons {
@@ -54,4 +58,8 @@
     background-color: #C2D9E8;
     margin-right: 6px;
     margin-left: 12px;
+}
+
+.landing-page--chevron {
+    fill: #929292;
 }

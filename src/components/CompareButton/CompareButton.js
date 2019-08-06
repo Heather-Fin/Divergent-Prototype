@@ -6,7 +6,7 @@ class CompareButton extends Component {
 
     render() {
         return (
-            <Link to="/comparison?id1=3&">
+            <Link to="/comparison?id1=3&id2=5">
                 <Button
                     disabled={this.props.disabled}  
                 >

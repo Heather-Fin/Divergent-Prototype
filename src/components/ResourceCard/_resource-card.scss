@@ -1,12 +1,18 @@
-.cardTitle {
-    @include carbon--type-style('heading-01');
-    margin-bottom: 12px;
-}
-
 .tile {
     margin-bottom: 40px;
+    margin-left: 53px;
     height: 245px;
     width: 186px;
+}
+
+.resource-card--h2 {
+    @include carbon--type-style('productive-heading-02');
+}
+
+.resource-card--p {
+    margin-top: 8px;
+    @include type-style('body-long-01');
+    color: #929292;
 }
 
 .resource-card--button {

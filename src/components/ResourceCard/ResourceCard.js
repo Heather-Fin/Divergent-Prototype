@@ -12,8 +12,8 @@ const ResourceCard = () => (
     
     <ClickableTile className='tile'>
         <div>
-            <h2 className='cardTitle'>Resource Tile</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2 className='resource-card--h2'>Resource Tile</h2>
+            <p className="resource-card--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <Button className="resource-card--button">
                 Add to Your Learning<Add20 className="bx--btn__icon"/>
             </Button>
