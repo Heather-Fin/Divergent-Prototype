@@ -2,7 +2,7 @@
 @import '../../components/Catagory/category';
 
 .landing-page--radar-graph {
-    height: 306px;
+    height: 400px;
     margin-top: 39px;
     margin-bottom: 32px;
     margin-left: 32px;
@@ -33,6 +33,12 @@
 .landing-page--h2 {
     margin-top: 96px;
     @include carbon--type-style('productive-heading-03');
+}
+
+.landing-page--p {
+    margin-top: 8px;
+    @include type-style('body-long-01');
+    color: #929292;
 }
 
 .landing-page--chart-legend {

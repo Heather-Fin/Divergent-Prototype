@@ -20,32 +20,32 @@ class LandingPage extends Component {
           <div className="bx--row landing-page--grey-container">
             <div className="bx--col-md-4 landing-page--white-container">
               <img src={RadarGraphImg} alt="Radar graph chart of mockup data" className="landing-page--radar-graph" />
-              <div className="bx--row landing-page--chart-legend">
+              {/* <div className="bx--row landing-page--chart-legend">
                 <div className="landing-page--square-pink" />
                 <p>Your Current Team</p>
                 <div className="landing-page--square-blue" />
                 <p>Business Unit Avg.</p>
-              </div>
+              </div> */}
             </div>
             <div className="bx--col-md-2 landing-page--white-container">
               <h2 className="landing-page--h2">Your Strengths:</h2>
                 <Catagory 
-                  title="Education"
+                  title="Education:"
                   description="Your team has a wide variety of educational backgrounds and certifications. This means your team is well-equipped to tackle problems from many different academic perspectives."
                 />
                 <Catagory
-                  title="Languages"
+                  title="Languages:"
                   description="Your team has a diverse set of communication styles, meaning your team has many ways of listening and sharing ideas."
                 />
             </div>
             <div className="bx--col-md-2 landing-page--white-container">
               <h2 className="landing-page--h2">Room to Improve:</h2>
                 <Catagory
-                  title="Skills"
+                  title="Skills:"
                   description="Your team's skills are limited mostly to technical experience. Tap into your team's potential to grow their skillset through the resources below."
-                />
+                /> <br/><br/><br/><br/>
                 <Catagory
-                  title="Culture"
+                  title="Culture:"
                   description="Having a low score in culture means your team comes from similar backgrounds. You may have a limited perspective when tackling new projects."
                 />
             </div>
