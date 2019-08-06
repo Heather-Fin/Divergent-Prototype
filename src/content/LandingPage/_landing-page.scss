@@ -10,8 +10,18 @@
 .landing-page--grey-container {
     background-color: #f3f3f3;
     padding: 35px;
-    padding-bottom: 40px;
-    border: 5px solid black;
+    margin-bottom: 40px;
+}
+
+.landing-page--white-container {
+    background-color: white;
+}
+
+.landing-page--white-bg {
+    background-color: white;
+    padding-left: 32px;
+    padding-top: 32px;
+    padding-right: 12px;
 }
 
 .landing-page--h1 {
@@ -50,6 +60,7 @@
     width: 20px;
     background-color: #F2C7CB;
     margin-right: 6px;
+    margin-left: -90px;
 }
 
 .landing-page--square-blue {
@@ -69,4 +80,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.landing-page--resource-card-grp {
+    padding-left: 53px;
 }
