@@ -59,6 +59,7 @@ td {
 .comparison-page--h2 {
     @include carbon--type-style('productive-heading-03');
     margin-bottom: 24px;
+    color: #929292;
 }
 
 .comparison-page--tile {
