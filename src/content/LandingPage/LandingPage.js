@@ -53,9 +53,9 @@ class LandingPage extends Component {
               <ResourceCard className="landing-page--resource-card"/>
             </div>
           </div>
-          <div className="bx--col-lg-1">
+          <div className="bx--col-lg-1 landing-page--see-more">
             <ChevronRight32 className="landing-page--chevron"/>
-            <p>See more</p>
+            <p className="landing-page--p">See more</p>
           </div>
         </div>
       </div>
