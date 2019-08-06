@@ -16,7 +16,7 @@ class ResourceCard extends Component {
                 <div>
                     <h2 className='resource-card--h2'>{this.props.title}</h2>
                     <p className="resource-card--p">{this.props.description}</p>
-                    <Button className="resource-card--button">
+                    <Button kind="secondary" className="resource-card--button">
                         Add to Your Learning<Add20 className="bx--btn__icon"/>
                     </Button>
                 </div>

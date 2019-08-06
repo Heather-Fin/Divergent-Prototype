@@ -57,13 +57,13 @@ const ComparisonPage = () => {
                                 <td><CheckMarkOutline20 className="comparison-page--icon"/>Languages</td>
                             </tr>
                             <tr>
-                                <td>
-                                    <Button onClick={console.log('clicked meee 1')}>
+                                <td className="comparison-page--button">
+                                    <Button>
                                         Pin Candidate<Pin20 className="bx--btn__icon"/>
                                     </Button>
                                 </td>
-                                <td>
-                                    <Button onClick={console.log('clicked meee 1')}>
+                                <td className="comparison-page--button">
+                                    <Button>
                                         Pin Candidate<Pin20 className="bx--btn__icon"/>
                                     </Button>
                                 </td>
