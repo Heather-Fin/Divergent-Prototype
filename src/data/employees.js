@@ -14,7 +14,7 @@ export default [
         personality: true,
         language: false,
         startDate:"October 1st, 2019",
-        pinned: true,
+        pinned: false,
     }, 
     {
         id: 2,

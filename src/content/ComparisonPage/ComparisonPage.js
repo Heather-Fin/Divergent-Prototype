@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useContext } from 'react';
 
 //carbon componenets
 import {
@@ -14,11 +14,17 @@ import LeftChevron20 from '@carbon/icons-react/lib/chevron--left/20';
 
 import { Link } from 'react-router-dom';
 
-class ComparisonPage extends Component {
-    handlePin = () => {
-        console.log("Pinned!");
+import EmployeeContext from '../../EmployeeContext';
+
+const ComparisonPage = () => {
+    const [employees, setEmployees] = useContext(EmployeeContext);
+    //console.log('From Comparison page', employees)
+    const handlePin = id => {
+        const employee = employees.find(employee => employee.id === id);
+        employee.pinned = true;
+        console.log(employees)
+        setEmployees([...employees])
     }
-    render() {
         return(
             <div>
                 <div className="comparison-page--header">
@@ -64,12 +70,12 @@ class ComparisonPage extends Component {
                                     </tr>
                                     <tr>
                                         <td className="comparison-page--button">
-                                            <Button onClick={this.handlePin}>
+                                            <Button onClick={() => handlePin(3)}>
                                                 Pin Candidate<Pin20 className="bx--btn__icon"/>
                                             </Button>
                                         </td>
                                         <td className="comparison-page--button">
-                                            <Button onClick={this.handlePin}>
+                                            <Button onClick={() => handlePin(1)}>
                                                 Pin Candidate<Pin20 className="bx--btn__icon"/>
                                             </Button>
                                         </td>
@@ -82,7 +88,6 @@ class ComparisonPage extends Component {
                 </div>
             </div>
         );
-    }
 };
 
 export default ComparisonPage;

@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Dropdown from '../../components/DropDown';
 import EmployeeCard from '../../components/EmployeeCard';
 import CompareButton from '../../components/CompareButton';
-import employees from '../../data/employees';
+import employees from '../../data/employees'
+import EmployeeContext from '../../EmployeeContext';
 
 const bandArray = ['6', '7', '8', '9', '10'];
 const locationArray = ['Austin', 'New York', 'San Fransisco'];
@@ -51,27 +52,31 @@ const TalentPoolPage = () => {
                     </div>
                 </div>
             </div>
-            {employees.map(employee => (
-                 <EmployeeCard
-                    checkMarkID={employee.checkMarkID}
-                    initials={employee.initials}
-                    description={employee.description}
-                    location={employee.location}
-                    bandLevel={employee.bandLevel}
-                    relocate={employee.relocate}
-                    perspective={employee.perspective}
-                    skills={employee.skills}
-                    education={employee.education}
-                    interests={employee.interests}
-                    personality={employee.personality}
-                    language={employee.language}
-                    startDate={employee.startDate}
-                    id={employee.id}
-                    key={employee.id}
-                    handleSelectedEmployees={handleSelectedEmployees}
-                    pinned={employee.pinned}
-                />
-            ))}
+           <EmployeeContext.Consumer>
+               {([employees]) => {
+                   return employees.map(employee => (
+                    <EmployeeCard
+                       checkMarkID={employee.checkMarkID}
+                       initials={employee.initials}
+                       description={employee.description}
+                       location={employee.location}
+                       bandLevel={employee.bandLevel}
+                       relocate={employee.relocate}
+                       perspective={employee.perspective}
+                       skills={employee.skills}
+                       education={employee.education}
+                       interests={employee.interests}
+                       personality={employee.personality}
+                       language={employee.language}
+                       startDate={employee.startDate}
+                       id={employee.id}
+                       key={employee.id}
+                       handleSelectedEmployees={handleSelectedEmployees}
+                       pinned={employee.pinned}
+                   />
+               ))}
+               }
+           </EmployeeContext.Consumer>
         <div className="talent-pool-page--bottom-button">
             <CompareButton
                 label="Compare Candidates"

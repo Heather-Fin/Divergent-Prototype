@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './app.scss';
 import { Content } from 'carbon-components-react/lib/components/UIShell';
 import HeaderNav from './components/HeaderNav';
@@ -10,11 +10,15 @@ import StrengthsWeaknesses from './content/StrengthsWeaknesses';
 import TalentPoolPage from './content/TalentPoolPage';
 import ComparisonPage from './content/ComparisonPage';
 
-class App extends Component {
-  render() {
-    return (
-      <>
-        <HeaderNav />
+import EmployeeContext from './EmployeeContext';
+import employees from './data/employees';
+
+const App = () => {
+  const employeeHook = useState(employees);
+  return (
+    <>
+      <HeaderNav />
+      <EmployeeContext.Provider value={employeeHook}>
         <Content>
           <Switch>
             <Route exact path="/" component={LandingPage} />
@@ -24,9 +28,9 @@ class App extends Component {
             <Route exact path="/comparison" component={ComparisonPage} />
           </Switch>
         </Content>
-      </>
-    );
-  }
+      </EmployeeContext.Provider>
+    </>
+  );
 }
 
 export default App;
