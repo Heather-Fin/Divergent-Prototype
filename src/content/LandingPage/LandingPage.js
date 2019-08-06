@@ -14,7 +14,6 @@ class LandingPage extends Component {
   render () {
     return ( 
       <div className="bx--grid bx--grid--full-width">
-        {/* <div className="landing-page--grey-container"> */}
           <div className="bx--row landing-page--grey-container">
             <div className="bx--col-md-4 landing-page--white-container">
               <img src={RadarGraphImg} alt="Radar graph chart of mockup data" className="landing-page--radar-graph" />
@@ -40,9 +39,8 @@ class LandingPage extends Component {
               <p className="landing-page--p">Having a low score in culture means your team comes from similar backgrounds. You may have a limited perspective when tackling new projects.</p>
             </div>
           </div>
-        {/* </div> */}
         <div className="bx--row landing-page--grey-container">
-          <div className="bx--col-lg-3 bx--no-gutter landing-page--white-bg">
+          <div className="bx--col-xlg-4 bx--no-gutter landing-page--white-bg">
             <h1 className="landing-page--h1">Suggested Resources</h1>
             <p className="landing-page--p">Learn how to empower and diversify your team! These IBM resources were selected based on the areas your team has the most room to improve in.</p>
             <p className="landing-page--p">You can access these tools now, or bookmark them to YourLearning for later access.</p>
