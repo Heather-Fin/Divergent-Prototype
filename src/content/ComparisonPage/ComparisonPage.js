@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 
 //carbon componenets
 import {
@@ -17,13 +17,20 @@ import { Link } from 'react-router-dom';
 import EmployeeContext from '../../EmployeeContext';
 
 const ComparisonPage = () => {
+
+    const [buttonText3, setButtonText3] = useState('Pin Candidate');
+    const [buttonText1, setButtonText1] = useState('Pin Candidate');
     const [employees, setEmployees] = useContext(EmployeeContext);
-    //console.log('From Comparison page', employees)
+
     const handlePin = id => {
         const employee = employees.find(employee => employee.id === id);
         employee.pinned = true;
-        console.log(employees)
-        setEmployees([...employees])
+        setEmployees([...employees]);
+        if(id===3){
+            setButtonText3('Pinned!');
+        } else if(id===1){
+            setButtonText1('Pinned!');
+        }
     }
         return(
             <div>
@@ -71,12 +78,12 @@ const ComparisonPage = () => {
                                     <tr>
                                         <td className="comparison-page--button">
                                             <Button onClick={() => handlePin(3)}>
-                                                Pin Candidate<Pin20 className="bx--btn__icon"/>
+                                                {buttonText3}<Pin20 className="bx--btn__icon"/>
                                             </Button>
                                         </td>
                                         <td className="comparison-page--button">
                                             <Button onClick={() => handlePin(1)}>
-                                                Pin Candidate<Pin20 className="bx--btn__icon"/>
+                                                {buttonText1}<Pin20 className="bx--btn__icon"/>
                                             </Button>
                                         </td>
                                     </tr>
