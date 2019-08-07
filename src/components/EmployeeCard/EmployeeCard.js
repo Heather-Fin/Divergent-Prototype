@@ -5,6 +5,7 @@ import {
     ClickableTile,
 } from 'carbon-components-react/lib/components/Tile';
 import Checkbox from 'carbon-components-react/lib/components/Checkbox';
+import TooltipIcon from 'carbon-components-react/lib/components/TooltipIcon';
 
 // icons
 import Location20 from '@carbon/icons-react/lib/location/20';
@@ -54,10 +55,12 @@ class EmployeeCard extends Component {
                 <div className="bx--grid bx--grid--full-width">
                     <div className="bx--row">
                         <div className="bx--col-sm-16 employee-card--checkbox">
-                            <Checkbox
-                                id={this.props.checkMarkID}
-                                onChange={this.handleChange}
-                            />
+                            <TooltipIcon tooltipText="Select 2 candidates to compare." align="start">
+                                <Checkbox
+                                    id={this.props.checkMarkID}
+                                    onChange={this.handleChange}
+                                />
+                            </TooltipIcon>
                         </div>
                         <div className="bx--col-md-3">
                             <h1 className="employee-card--h1">{this.props.initials}</h1>
