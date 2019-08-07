@@ -55,7 +55,7 @@ class EmployeeCard extends Component {
                 <div className="bx--grid bx--grid--full-width">
                     <div className="bx--row">
                         <div className="bx--col-sm-16 employee-card--checkbox">
-                            <TooltipIcon tooltipText="Select 2 candidates to compare." align="start">
+                            <TooltipIcon tooltipText="Select two candidates to compare" align="start" direction="bottom">
                                 <Checkbox
                                     id={this.props.checkMarkID}
                                     onChange={this.handleChange}
