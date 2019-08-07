@@ -1,5 +1,7 @@
 View at: https://diversity-hub.netlify.com/#/
 
+Designed for a full screen web browser experience and will be optimized for different screen sizes later on. Users have the ability to compare candidates from the Talent Pool Suggestions page by selected two minimum candidates to compare and then selecting the "Compare Candidates" button.
+
 ### `npm start`
 
 Runs the app in the development mode.<br>
